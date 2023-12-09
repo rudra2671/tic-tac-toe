@@ -1,0 +1,154 @@
+*{
+    margin: 0; 
+    padding: 0;
+
+}
+
+body{
+    background-color: #548687;
+    text-align: center;
+
+} 
+
+h1{
+    font-family: 'Poppins', sans-serif; 
+    text-shadow: 0 0 1rem rgba(0,0,0,0.5); 
+    
+}
+
+.container {
+    height: 70VH;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.game{
+    height: 60vmin; 
+    width: 60vmin;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    gap: 1.5vmin;
+
+}
+
+.box{
+    height: 18vmin ;
+    width: 18vmin; 
+    border-radius: 1rem;
+    border: none ;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.5);
+    font-size: 8vmin;
+    color: #b0413e;
+    
+} 
+
+#reset-btn {
+    position: relative;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.5);
+    opacity: 0.8;
+    color: #0ef;
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    border-radius: 10px;
+    border: 3px solid #0ef;
+    font-weight: 500;
+    /* background-color: rgb(20, 224, 58);  */
+    background: transparent;
+    padding: 0.5rem; 
+    letter-spacing: 5px;
+    font-family: 'Playpen Sans', cursive; 
+    font-family: 'Poppins', sans-serif;
+    transition: .3s;
+    z-index: 1;
+}
+
+#reset-btn:hover {
+    opacity: 1;
+    color: black;
+    box-shadow: 0 0 5px #0ef, 0 0 5px #0ef inset;
+}
+
+#reset-btn::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: #0ef;
+    box-shadow: 0 0 20px #0ef;
+    z-index: -1;
+    transition: .1s;
+}
+
+#reset-btn:hover::after {
+    left: 0;
+    width: 100%;
+}
+
+#msg { 
+    font-size: 5vmin; 
+    text-shadow: 0 0 1rem rgba(0,0,0,0.5);;
+}
+
+.msg-container {
+    height: 30vmin; 
+
+}
+
+.hide {
+    display: none;
+}
+
+.new-btn {
+    position: relative;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.5);
+    opacity: 0.8;
+    color: #0ef;
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    border-radius: 10px;
+    border: 3px solid #0ef;
+    font-weight: 500;
+    /* background-color: rgb(20, 224, 58);  */
+    background: transparent;
+    padding: 0.5rem; 
+    letter-spacing: 5px;
+    font-family: 'Playpen Sans', cursive; 
+    font-family: 'Poppins', sans-serif;
+    transition: .3s;
+    z-index: 1;
+}
+
+.new-btn:hover {
+    opacity: 1;
+    color: black;
+    box-shadow: 0 0 5px #0ef, 0 0 5px #0ef inset;
+}
+
+.new-btn::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: #0ef;
+    box-shadow: 0 0 20px #0ef;
+    z-index: -1;
+    transition: .1s;
+}
+
+.new-btn:hover::after {
+    left: 0;
+    width: 100%;
+}
+
+.msg{
+    font-size: 5vmin; 
+    font-family: 'Poppins', sans-serif;
+}
